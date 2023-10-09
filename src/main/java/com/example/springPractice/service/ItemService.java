@@ -42,10 +42,10 @@ public class ItemService {
 	public List<ItemModel> getAllItem() {
 		List<ItemModel> allItems = new ArrayList<>();
 		
+		// キャッシュ機能の効果をわかりやすくするための処理（３秒待機）
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
 		
@@ -65,10 +65,10 @@ public class ItemService {
 	@Cacheable(value="getItem", key="#p0") // キー値を指定してキャッシュ管理
 	public Optional<ItemModel> getItem(Integer itemId) {
 		
+		// キャッシュ機能の効果をわかりやすくするための処理（３秒待機）
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
 		

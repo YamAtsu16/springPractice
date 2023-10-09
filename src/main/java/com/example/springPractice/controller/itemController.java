@@ -32,7 +32,7 @@ public class ItemController {
 		if (allItems.isEmpty()) {
 			return ResponseEntity.noContent().build();
 		} else {
-			return ResponseEntity.ok(allItems);			
+			return ResponseEntity.ok(allItems);
 		}
 	}
 	
