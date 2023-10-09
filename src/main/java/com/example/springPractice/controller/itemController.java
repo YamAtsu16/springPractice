@@ -21,7 +21,7 @@ import com.example.springPractice.service.ItemService;
  * @author atsu_yyy
  */
 @RestController
-public class itemController {
+public class ItemController {
 	
 	@Autowired
 	private ItemService service;

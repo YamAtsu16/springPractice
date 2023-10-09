@@ -1,6 +1,8 @@
 package com.example.springPractice.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.example.springPractice.model.ItemModel;
@@ -10,6 +12,8 @@ import com.example.springPractice.model.ItemModel;
  * @author atsu_yyy
  */
 @Repository
-public interface ItemRepository extends CrudRepository<ItemModel, Integer>{
-	// CrudRepositoryを実装したインターフェースを定義するのみ
+public interface ItemRepository extends JpaRepository<ItemModel, Integer>{
+	
+	/** "itemId"の昇順でソートし、全件取得するメソッド */
+	public List<ItemModel> findAllByOrderByItemId();
 }
