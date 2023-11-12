@@ -1,2 +1,11 @@
-# springPractice
+# SpringBoot（RestAPI）の基礎学習
  
+## 1. 学習内容
+- RestAPIの基本的な実装方法
+- 独自の例外クラスの実装方法
+- DBからデータ取得（Postgresql）
+- SpringSecurityによるアクセス制御
+
+## 2.実装機能について
+- APIにリクエストを送信することで、Itemテーブルのデータを取得、編集する
+- 特定のパスにリクエストが送信された場合、ログインを要求する
